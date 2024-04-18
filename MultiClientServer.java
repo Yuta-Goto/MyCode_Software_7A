@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class JabberServer {
+public class MultiClientServer {
     private static int SERVER_PORT = 8080;//ポート番号設定
     public static void main(String[] args)
     throws IOException{
