@@ -3,6 +3,7 @@ import java.net.*;
 
 public class MultiClientServer {
     private static int SERVER_PORT = 8080;//ポート番号設定
+
     public static void main(String[] args)
     throws IOException{
         ServerSocket s = new ServerSocket(SERVER_PORT);//ソケット作成
@@ -32,6 +33,21 @@ public class MultiClientServer {
             }
         }finally{
             s.close();
+        }
+    }
+}
+
+class ClientDealer extends Threads{
+    private Socket socket;
+
+    public ClientDealer(Socket socket){
+        this.socket = socket;
+    }
+
+    public void run(){
+        try{
+            //()じゃなくてここに書く
+            String message = 
         }
     }
 }
